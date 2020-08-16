@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Flood Predictor</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/bootstrap.min.css') }}">
+
+    <!-- FontAwesome CSS -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/font-awesome.min.css') }}">
+
+    <!-- ElegantFonts CSS -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/elegant-fonts.css') }}">
+
+    <!-- themify-icons CSS -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/themify-icons.css') }}">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/swiper.min.css') }}">
+
+    <!-- Styles -->
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
+
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+</head>
+<body class="single-page about-page">
+<header class="site-header">
+    <div class="nav-bar bghue">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 d-flex flex-wrap justify-content-between align-items-center">
+                    <div class="site-branding d-flex align-items-center">
+                        <img class="d-block" src = "{{ url_for('static', filename = 'images/logo.png') }}" alt="logo">
+                    </div><!-- .site-branding -->
+
+                    <nav class="site-navigation d-flex justify-content-end align-items-center">
+                        <ul class="d-flex flex-column flex-lg-row justify-content-lg-end align-content-center">
+                            <li class="current-menu-item"><a href="{{ url_for('index') }}">Predict</a></li>
+                        </ul>
+                    </nav><!-- .site-navigation -->
+
+                    <div class="hamburger-menu d-lg-none">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div><!-- .hamburger-menu -->
+                </div><!-- .col -->
+            </div><!-- .row -->
+        </div><!-- .container -->
+    </div><!-- .nav-bar -->
+</header><!-- .site-header -->
+
+    <div class="page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1>About Us</h1>
+                </div><!-- .col -->
+            </div><!-- .row -->
+        </div><!-- .container -->
+    </div><!-- .page-header -->
+
+    <div class="about-testimonial">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-4 col-lg-4">
+                    <div class="testimonial-cont">
+                        <div class="entry-content">
+                            <p>I am a student aspiring to become an Entrepreneur. </p>
+                        </div>
+
+                        <div class="entry-footer d-flex flex-wrap align-items-center mt-5">
+                            <img src="{{ url_for('static', filename = 'images/aks.png') }}" alt="">
+
+                            <h4>Akshatha N T, <span>Engineer</span></h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 col-lg-4">
+                    <div class="testimonial-cont">
+                        <div class="entry-content">
+                            <p>I am a student aspiring to become a Data Scientist.</p>
+                        </div>
+
+                        <div class="entry-footer d-flex flex-wrap align-items-center mt-5">
+                            <img src="{{ url_for('static', filename = 'images/nish.png') }}" alt="">
+
+                            <h4>Nishith A, <span class="makeblue">Engineer</span></h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 col-lg-4">
+                    <div class="testimonial-cont">
+                        <div class="entry-content">
+                            <p>I am a student willing to leave a significant mark on this world. </p>
+                        </div>
+
+                        <div class="entry-footer d-flex flex-wrap align-items-center mt-5">
+                            <img src="{{ url_for('static', filename = 'images/adi.png') }}" alt="">
+
+                            <h4>Adiya Didwania, <span>Engineer</span></h4>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="home-page-about">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6 order-2 order-lg-1">
+                    <div class="welcome-content">
+                        <header class="entry-header">
+                            <h2 class="entry-title makewhite">About B17</h2>
+                        </header><!-- .entry-header -->
+
+                        <div class="entry-content flood-desc mt-5">
+                            <p>We are a group of friends that came together for the sake of a final year project. Over the course of the development of this project, our friendship has grown and we know we will remain
+                            friends even after this era of our lives ends. We are proud of eachother and respect one another a lot. Thanks to our college for brining us together.</p>
+                        </div><!-- .entry-content -->
+
+                        <div class="entry-button mt-3">
+                            <a href="https://www.rnsit.ac.in/" class="btn blue-border mr-2" target="_blank">Our College</a>
+                        </div><!-- .entry-footer -->
+                    </div><!-- .welcome-content -->
+                </div><!-- .col -->
+
+                <div class="col-12 col-lg-6 mt-1 order-1 order-lg-2">
+                    <img src = "{{ url_for('static', filename = 'images/rns.jpg') }}" alt="welcome">
+                </div><!-- .col -->
+            </div><!-- .row -->
+        </div><!-- .container -->
+    </div><!-- .home-page-icon-boxes -->
+
+    <script type='text/javascript' src = "{{ url_for('static', filename = 'js/jquery.js') }}"></script>
+    <script type='text/javascript' src = "{{ url_for('static', filename = 'js/jquery.collapsible.min.js') }}"></script>
+    <script type='text/javascript' src = "{{ url_for('static', filename = 'js/swiper.min.js') }}"></script>
+    <script type='text/javascript' src = "{{ url_for('static', filename = 'js/jquery.countdown.js') }}"></script>
+    <script type='text/javascript' src = "{{ url_for('static', filename = 'js/circle-progress.min.js') }}"></script>
+    <script type='text/javascript' src = "{{ url_for('static', filename = 'js/jquery.countTo.min.js') }}"></script>
+    <script type='text/javascript' src = "{{ url_for('static', filename = 'js/jquery.barfiller.js') }}"></script>
+    <script type='text/javascript' src = "{{ url_for('static', filename = 'js/custom.js') }}"></script>
+
+</body>
+</html>
